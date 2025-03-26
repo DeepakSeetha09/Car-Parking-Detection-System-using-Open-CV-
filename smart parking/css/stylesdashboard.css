@@ -1,0 +1,342 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Overview Section */
+#overview {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#overview h2 {
+    margin-top: 0;
+}
+
+.overview-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.overview-box p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Live Camera Feed */
+#live-feed {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#live-feed h2 {
+    margin-top: 0;
+}
+
+.camera-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camera-feed video {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.camera-feed button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.camera-feed button:hover {
+    background-color: #3498db;
+}
+
+/* Parking Lot Map */
+#parking-map {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#parking-map h2 {
+    margin-top: 0;
+}
+
+.map img {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+}
+
+/* Parking Space Management */
+#management {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#management h2 {
+    margin-top: 0;
+}
+
+.management-tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.management-tools button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.management-tools button:hover {
+    background-color: #d35400;
+}
+
+/* System Controls */
+#controls {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#controls h2 {
+    margin-top: 0;
+}
+
+.controls-tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls-tools button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls-tools button:hover {
+    background-color: #2ecc71;
+}
+
+/* Reports and Analytics */
+#reports {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#reports h2 {
+    margin-top: 0;
+}
+
+.report-tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.report-tools button {
+    padding: 10px 20px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-tools button:hover {
+    background-color: #9b59b6;
+}
+
+/* Alerts and Notifications */
+#alerts {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#alerts h2 {
+    margin-top: 0;
+}
+
+.alert-box {
+    background-color: #f39c12;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.alert-box ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.alert-box li {
+    margin-bottom: 5px;
+}
+
+/* User Management */
+#user-management {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#user-management h2 {
+    margin-top: 0;
+}
+
+.user-management-tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-management-tools button {
+    padding: 10px 20px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-management-tools button:hover {
+    background-color: #2c3e50;
+}
+
+/* Settings */
+#settings {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#settings h2 {
+    margin-top: 0;
+}
+
+.settings-tools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings-tools button {
+    padding: 10px 20px;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-tools button:hover {
+    background-color: #1abc9c;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

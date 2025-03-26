@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Parking Space Detection</title>
+    <link rel="stylesheet" href="css/stylesdashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Parking Space Detection Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Logout Button -->
+                <li style="float:right"><button class="logout-btn" onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Content -->
+        <section id="overview">
+            <h2>System Overview</h2>
+            <div class="overview-box">
+                <p><strong>Status:</strong> Running</p>
+                <p><strong>Total Spaces:</strong> 100</p>
+                <p><strong>Available Spaces:</strong> 25</p>
+                <p><strong>Occupied Spaces:</strong> 75</p>
+            </div>
+        </section>
+
+        <!-- Live Camera Feed -->
+        <section id="live-feed">
+            <h2>Live Camera Feed</h2>
+            <div class="camera-feed">
+                <video controls autoplay muted>
+                    <source src="video/parking-lot-live.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div>
+                    <button onclick="startFeed()">Start Feed</button>
+                    <button onclick="stopFeed()">Stop Feed</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parking Lot Map -->
+        <section id="parking-map">
+            <h2>Parking Lot Map</h2>
+            <div class="map">
+                <img src="images/parking-lot-map.png" alt="Parking Lot Map">
+            </div>
+        </section>
+
+        <!-- Parking Space Management -->
+        <section id="management">
+            <h2>Parking Space Management</h2>
+            <div class="management-tools">
+                <button onclick="manualOverride()">Manual Override</button>
+                <button onclick="addParkingSpace()">Add Parking Space</button>
+                <button onclick="removeParkingSpace()">Remove Parking Space</button>
+            </div>
+        </section>
+
+        <!-- System Controls -->
+        <section id="controls">
+            <h2>System Controls</h2>
+            <div class="controls-tools">
+                <button onclick="startDetection()">Start Detection</button>
+                <button onclick="stopDetection()">Stop Detection</button>
+                <button onclick="configureCamera()">Configure Camera</button>
+                <button onclick="configureAlgorithm()">Configure Algorithm</button>
+            </div>
+        </section>
+
+        <!-- Reports and Analytics -->
+        <section id="reports">
+            <h2>Reports and Analytics</h2>
+            <div class="report-tools">
+                <button onclick="generateReport('daily')">Generate Daily Report</button>
+                <button onclick="generateReport('weekly')">Generate Weekly Report</button>
+                <button onclick="generateReport('monthly')">Generate Monthly Report</button>
+                <button onclick="exportData()">Export Data</button>
+            </div>
+        </section>
+
+        <!-- Alerts and Notifications -->
+        <section id="alerts">
+            <h2>Alerts and Notifications</h2>
+            <div class="alert-box">
+                <p><strong>Recent Alerts:</strong></p>
+                <ul>
+                    <li>Unauthorized parking detected at 10:45 AM.</li>
+                    <li>System paused due to network issues at 2:30 PM.</li>
+                    <li>Low availability: 2 spaces left at 4:00 PM.</li>
+                </ul>
+                <button onclick="configureNotifications()">Configure Notifications</button>
+            </div>
+        </section>
+
+        <!-- User Management -->
+        <section id="user-management">
+            <h2>User Management</h2>
+            <div class="user-management-tools">
+                <button onclick="manageRoles()">Manage User Roles</button>
+                <button onclick="viewLoginHistory()">View Login History</button>
+            </div>
+        </section>
+
+        <!-- Settings -->
+        <section id="settings">
+            <h2>Settings</h2>
+            <div class="settings-tools">
+                <button onclick="systemConfig()">System Configuration</button>
+                <button onclick="apiIntegration()">API Integration</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Placeholder functions for button actions
+        function startFeed() {
+            alert('Starting the camera feed...');
+        }
+        function stopFeed() {
+            alert('Stopping the camera feed...');
+        }
+        function manualOverride() {
+            alert('Manual override activated.');
+        }
+        function addParkingSpace() {
+            alert('Adding a parking space.');
+        }
+        function removeParkingSpace() {
+            alert('Removing a parking space.');
+        }
+        function startDetection() {
+            alert('Starting the parking space detection.');
+        }
+        function stopDetection() {
+            alert('Stopping the parking space detection.');
+        }
+        function configureCamera() {
+            alert('Configuring the camera...');
+        }
+        function configureAlgorithm() {
+            alert('Configuring the detection algorithm...');
+        }
+        function generateReport(type) {
+            alert('Generating ' + type + ' report...');
+        }
+        function exportData() {
+            alert('Exporting data...');
+        }
+        function configureNotifications() {
+            alert('Configuring notifications...');
+        }
+        function manageRoles() {
+            alert('Managing user roles...');
+        }
+        function viewLoginHistory() {
+            alert('Viewing login history...');
+        }
+        function systemConfig() {
+            alert('Opening system configuration...');
+        }
+        function apiIntegration() {
+            alert('Opening API integration settings...');
+        }
+
+        // Logout function
+        function logout() {
+            // Perform logout operation (e.g., clear session, redirect to login page)
+            alert('Logging out...');
+            window.location.href = 'auth.html'; // Redirect to login page
+        }
+    </script>
+</body>
+</html>
